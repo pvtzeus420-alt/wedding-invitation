@@ -40,14 +40,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-  // 2. Envelope Click Action (Open & Stay Open)
-frame.addEventListener("click", () => {
+    // 2. Envelope Click Action (Open & Close Sequencer)
+    frame.addEventListener("click", () => {
+        
+        frame.classList.add("open");
 
-    frame.classList.add("open");
+        
+        setTimeout(() => {
+            cardOverlay.classList.add("show");
+        }, 1000);
 
-    setTimeout(() => {
-        cardOverlay.classList.add("show");
-    }, 1000);
+       
+        setTimeout(() => {
+           cardOverlay.classList.remove("show");
+            
+            
+            setTimeout(() => {
+                frame.classList.remove("open");
+            }, 60000);
 
-    // No auto close
+        }, 60000); 
+    });
 });
