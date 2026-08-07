@@ -230,6 +230,7 @@ body {
     position: relative;
     z-index: 3;
     padding: 40px 35px 20px 35px;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -247,6 +248,11 @@ body {
     font-weight: 500;
     line-height: 1.1;
     margin-bottom: 15px;
+
+    width: 100%;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-names .ampersand {
@@ -287,30 +293,38 @@ body {
 }
 
 .illustration-box {
-    width: 46%;
+    width: 33%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: -0px;
 }
 
 .traditional-frame {
-    width: 100%;
-    max-width: 200px;
+    width: 135%;
+    max-width: 160px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(230, 230, 230, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .couple-img {
-    width: 103%;
-    height: 103%;
-    object-fit: cover;
+    width: 105%;
+    height: 105%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
     transform: translate(-1.5%, -1.5%);
 }
 
 .details-box {
-    width: 52%;
+    width: 34%;
     text-align: center;
 }
 
