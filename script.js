@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             setTimeout(() => {
                 frame.classList.remove("open");
-            }, 60000);
+            }, 1000);
 
         }, 60000); 
     });
