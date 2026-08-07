@@ -59,6 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 frame.classList.remove("open");
             }, 1000);
 
-        }, 60000); 
+        }, 80000); 
     });
 });
